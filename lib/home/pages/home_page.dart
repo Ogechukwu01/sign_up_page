@@ -14,22 +14,24 @@ class _HomePageState extends State<HomePage> {
     SignupPage(),
     LoginPage(),
   ];
+  var selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
         children: listOfPages,
-        //index: selectedIndex,
+        index: selectedIndex,
       ),
       bottomNavigationBar: BottomNavigationBar(
-          //currentIndex: selectedIndex,
+          currentIndex: selectedIndex,
           unselectedItemColor: Colors.grey,
           selectedItemColor: Colors.black,
           showSelectedLabels: true,
           showUnselectedLabels: true,
-        onTap: (value) {
+          onTap: (value) {
             setState(() {
-              //selectedIndex = value;
+              selectedIndex = value;
             });
         },
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sign_up_page/home/Widgets/login_details_card.dart';
 import 'package:sign_up_page/home/Widgets/signup_details_card.dart';
+import 'package:sign_up_page/home/pages/login_page.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -17,7 +19,8 @@ class SignupPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontSize: 35.0
               ),
-            ),Text(
+            ),
+            Text(
               "Please fill in this form to create an account!",
             style: TextStyle(
               fontSize: 14.0,
@@ -36,14 +39,13 @@ class SignupPage extends StatelessWidget {
           ),
         ],
       ),
-
-      body: ListView(
-        padding: EdgeInsets.all(8),
-        children: [
-          Divider(),
-          SignupDetailsCard()
-        ],
-      ),
+              body: ListView(
+                padding: EdgeInsets.all(8),
+                children: [
+                  Divider(),
+                  SignupDetailsCard(),
+                ],
+              ),
     );
   }
 }
