@@ -15,7 +15,7 @@ class SignupPage extends StatelessWidget {
                 "Sign Up",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 40.0
+                fontSize: 35.0
               ),
             ),Text(
               "Please fill in this form to create an account!",
@@ -27,10 +27,10 @@ class SignupPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            color: Colors.tealAccent,
+            color: Colors.grey,
               onPressed: () {},
               icon: Icon(
-                Icons.account_circle,
+                Icons.person_sharp,
                 size: 40,
               )
           ),

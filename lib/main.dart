@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.pinkAccent,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent),
         useMaterial3: true,
-        scaffoldBackgroundColor: Colors.grey
+        scaffoldBackgroundColor: Colors.white
       ),
       home: HomePage(),
     );

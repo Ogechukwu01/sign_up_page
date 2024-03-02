@@ -23,8 +23,8 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           //currentIndex: selectedIndex,
-          unselectedItemColor: Colors.black,
-          selectedItemColor: Colors.red,
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.black,
           showSelectedLabels: true,
           showUnselectedLabels: true,
         onTap: (value) {

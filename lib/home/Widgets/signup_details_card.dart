@@ -5,40 +5,90 @@ class SignupDetailsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        color: Colors.grey,
-        borderRadius: BorderRadius.circular(8),
-      ),
+    return Padding(
+      padding: EdgeInsets.all(8.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(height: 8,),
-          Text(
-            "First Name",
-            style: TextStyle(color: Colors.grey),
+          Container(
+            padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+            height: 40.0,
+            decoration: BoxDecoration(
+            color: Colors.grey.shade400,
+            borderRadius: BorderRadius.circular(16.0)
+            ),
+            margin: EdgeInsets.only(bottom: 10.0),
+            child: Text(
+              "First Name",
+              style: TextStyle(
+                  color: Colors.grey.shade700,
+                  fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-          SizedBox(height: 8,),
-          Text(
-            "Last Name",
-            style: TextStyle(color: Colors.grey),
+          Container(
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+                height: 40.0,
+                decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: BorderRadius.circular(16.0)
+              ),
+            margin: EdgeInsets.only(bottom: 10.0),
+            child: Text(
+              "Last Name",
+              style: TextStyle(
+                color: Colors.grey.shade700,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-          SizedBox(height: 8,),
-          Text(
-            "Email",
-            style: TextStyle(color: Colors.grey),
+          Container(
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+                height: 40.0,
+                decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: BorderRadius.circular(16.0)
+              ),
+            margin: EdgeInsets.only(bottom: 10.0),
+            child: Text(
+              "Email",
+              style: TextStyle(
+                color: Colors.grey.shade700,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-          SizedBox(height: 8,),
-          Text(
-            "Password",
-            style: TextStyle(color: Colors.grey),
+          Container(
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+                height: 40.0,
+                decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+            margin: EdgeInsets.only(bottom: 10.0),
+            child: Text(
+              "Password",
+              style: TextStyle(
+                color: Colors.grey.shade700,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-          SizedBox(height: 8,),
-          Text(
-            "Confirm Password",
-            style: TextStyle(color: Colors.grey),
+          Container(
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+                height: 40.0,
+                decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: BorderRadius.circular(16.0)
+              ),
+            margin: EdgeInsets.only(bottom: 10.0),
+            child: Text(
+              "Confirm Password",
+              style: TextStyle(
+                color: Colors.grey.shade700,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ],
       ),
